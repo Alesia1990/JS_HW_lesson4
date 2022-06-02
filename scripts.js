@@ -68,3 +68,19 @@ for(let i = 0; i < arr5.length; i++){
 let arr6 = [17, -53, 56, 1, 22, -9, 7483, true, "text"];
 arr6.push("weather");
 console.log(arr6[arr6.length - 1]);
+
+/* 7. Запросите у пользователя по очереди числовые значения при помощи prompt и
+сохраните их в массив. Собирайте числа до тез пор пока пользователь не введет пустое
+значение. Выведите получившийся массив на экран. Выполните сортировку чисел
+массива, и выведите его на экран. */
+
+let getNum;
+let arr7 = [];
+for(let i =0; ; i++){
+    getNum = +prompt("Введите значение");
+    if(getNum == " ") break;
+    arr7.push(getNum);
+    
+}
+console.log(arr7);
+console.log(arr7.sort( (a,b)=> (a-b) ) );
