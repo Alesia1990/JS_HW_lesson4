@@ -74,18 +74,17 @@ console.log(arr6[arr6.length - 1]);
 значение. Выведите получившийся массив на экран. Выполните сортировку чисел
 массива, и выведите его на экран. */
 
-// let getNum;
-// let arr7 = [];
-// for(let i =0; ; i++){
-//     getNum = +prompt("Введите значение");
-//     if(getNum == " ") break;
-//     arr7.push(getNum);
+let getNum;
+let arr7 = [];
+for(let i =0; ; i++){
+    getNum = +prompt("Введите значение");
+    if(getNum == " ") break;
+    arr7.push(getNum);
     
-// }
-// console.log(arr7);
-// console.log(arr7.sort( (a,b)=> (a-b) ) );
+}
+console.log(arr7);
+console.log(arr7.sort( (a,b)=> (a-b) ) );
 
-console.log("--------------------")
 
 /* 8. Переверните массив [12, false, ‘Текст’, 4, 2, -5, 0] (выведите в обратном порядке),
 используя цикл while и метод reverse. */
@@ -121,8 +120,11 @@ let arr10 = [1,8,0,13,76,8,7,0,22,0,2,3,2];
 let first = arr10.indexOf(0);
 let last = arr10.lastIndexOf(0);
 let sum10 = 0;
+
 for(let i = first; i <= last; i++){
     sum10 += arr10[i];
 }
 console.log(sum10);
+
+
 
